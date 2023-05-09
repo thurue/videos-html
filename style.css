@@ -1,0 +1,123 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(34, 28, 36);
+    overflow-x: hidden;
+}
+
+.controle {
+    position: absolute;
+    height: calc(100% - 60px);
+    width: calc(100% - 60px);
+    background-color: rgba(0, 0, 0, 0);
+
+    top: 30px;
+}
+
+i {
+    width: 40px;
+    height: 40px;
+    scale: 2;
+
+    transform: translate(10%, -10%);
+
+    color: rgb(157, 0, 172);
+
+    transition: .2s all;
+}
+i:hover{
+   scale: 1.8;
+   color: rgb(255, 255, 255);
+}
+i:active{
+   scale: 2.4;
+}
+
+
+i#voltar {
+    position: absolute;
+    left: calc(50% - 70px);
+    bottom: 0px;
+    
+    /* transform: translate(-100%, -100%); */
+}
+
+i#play {
+    position: absolute;
+    left: calc(50% - 20px);
+    bottom: 0px;
+
+}
+
+i#pause {
+    position: absolute;
+    left: calc(50% + 20px);
+    bottom: 0px;
+
+}
+
+i#avançar {
+    position: absolute;
+    left: calc(50% + 60px);
+    bottom: 0px;
+}
+
+.principal {
+    position: relative;
+    padding: 30px;
+    /* width: 65%; */
+    /* height: 70vh; */
+
+    overflow: hidden;
+}
+
+.videoP {
+    margin: auto;
+    width: 80vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 4vh;
+    filter: opacity(1);
+}
+
+.galery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    transition: all 5s;
+}
+
+.video {
+    margin: auto;
+    height: 30vh;
+    border-radius: 5vh;
+
+    transition: all .5s;
+}
+
+.video:hover {
+    border-radius: 2vh;
+    scale: 1.2;
+}
+
+@media (width<1000px) {
+    
+.galery {
+    grid-template-columns: auto;
+}
+i {
+    scale: 1.2;
+
+    transform: translate(10%, 20%);
+}
+
+i:hover{
+    scale: 1.1;
+    color: rgb(255, 255, 255);
+ }
+ i:active{
+    scale: 1.5;
+ }
+
+}
