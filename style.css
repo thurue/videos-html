@@ -19,7 +19,7 @@ i {
     height: 40px;
     scale: 2;
 
-    transform: translate(10%, -10%);
+    transform: translate(10%, 10%);
 
     color: rgb(157, 0, 172);
 
@@ -86,13 +86,18 @@ i#avançar {
 
 
 @media (width<1000px) {
-    i:hover {
+    i {
+        scale: 1.2;
+    
+        transform: translate(10%, 20%);
+    }
+    
+    i:hover{
         scale: 1.1;
         color: rgb(255, 255, 255);
-    }
-
-    i:active {
+     }
+     i:active{
         scale: 1.5;
-    }
-
+     }
+    
 }
