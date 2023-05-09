@@ -25,14 +25,12 @@ i {
 
     transition: .2s all;
 }
-
-i:hover {
-    scale: 1.8;
-    color: rgb(255, 255, 255);
+i:hover{
+   scale: 1.8;
+   color: rgb(255, 255, 255);
 }
-
-i:active {
-    scale: 2.4;
+i:active{
+   scale: 2.4;
 }
 
 
@@ -40,7 +38,7 @@ i#voltar {
     position: absolute;
     left: calc(50% - 70px);
     bottom: 0px;
-
+    
     /* transform: translate(-100%, -100%); */
 }
 
@@ -75,7 +73,7 @@ i#avançar {
 
 .videoP {
     margin: auto;
-    width: 85vw;
+    width: 80vw;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0%);
@@ -83,16 +81,43 @@ i#avançar {
     filter: opacity(1);
 }
 
+.galery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    transition: all 5s;
+}
 
+.video {
+    margin: auto;
+    width: 50vw;
+    border-radius: 5vh;
+
+    transition: all .5s;
+}
+
+.video:hover {
+    border-radius: 2vh;
+    scale: 1.2;
+}
 
 @media (width<1000px) {
-    i:hover {
-        scale: 1.1;
-        color: rgb(255, 255, 255);
-    }
+    
+.galery {
+    grid-template-columns: auto;
+}
+i {
+    scale: 1.2;
 
-    i:active {
-        scale: 1.5;
-    }
+    transform: translate(10%, 20%);
+}
+
+i:hover{
+    scale: 1.1;
+    color: rgb(255, 255, 255);
+ }
+ i:active{
+    scale: 1.5;
+ }
 
 }
